@@ -373,3 +373,80 @@ _pingDestination function calls the requestToDest function on the Router's Gatew
         );
     }
     ```
+### `Handling a crosschain request`
+
+To handle cross-chain requests on the destination chain we make use of handleRequestFromSource function. This function is automatically called when the destination chain receives the requests, and the user does not need to manually call it. The core logic of the dapp is written in this function to store the message and contacts in two mappings, map and contacts, respectively.
+
+Mappings:
+
+map: This mapping is used to store the messages between two contacts. The messages are stored in a string array indexed by the two addresses of the contacts who are communicating.
+
+contacts: This mapping is used to store the contacts for a particular user. It maps the address of a user to an array of addresses of their contacts.
+
+handleRequestFromSource() Function
+The handleRequestFromSource function is called automatically by the destination chain upon receipt of a cross-chain request. It takes in the following parameters:
+
+srcContractAddress: The address of the source contract.
+payload: The payload of the cross-chain request, which contains the relevant information to be processed by the destination chain.
+srcChainId: The ID of the source chain.
+srcChainType: The type of the source chain.
+The function decodes the payload and retrieves the information, which includes a request ID, two wallet addresses (user0 and user1), and a message. If the message is a special "#NULL#" value, the addresses are added to each other's contacts in the contacts mapping. If the message is not "#NULL#", it is added to the message history in the map mapping between the two addresses.
+
+getMessages() Function
+The getMessages function returns the message history between two addresses. It takes in two parameters:
+
+u0: The first wallet address.
+u1: The second wallet address.
+The function returns the message history stored in the map mapping between the two addresses.
+
+getContacts() Function
+The getContacts function returns the contacts of a given wallet address. It takes in one parameter:
+
+u0: The wallet address.
+The function returns the contacts stored in the contacts mapping for the given wallet address.
+
+```sh
+  mapping(address => mapping(address => string[])) public map;
+    mapping(address => address[]) public contacts;
+
+   function handleRequestFromSource(
+        bytes memory srcContractAddress,
+        bytes memory payload,
+        string memory srcChainId,
+        uint64 srcChainType
+    ) external override returns (bytes memory) {
+        require(msg.sender == address(gatewayContract));
+
+        (
+            uint64 requestId,
+            address user0,
+            address user1,
+            string memory message
+        ) = abi.decode(payload, (uint64, address, address, string));
+
+        if (
+            keccak256(abi.encodePacked(message)) ==
+            keccak256(abi.encodePacked("#NULL#"))
+        ) {
+            contacts[user0].push(user1);
+            contacts[user1].push(user0);
+        } else {
+            map[user0][user1].push(message);
+            map[user1][user0].push(message);
+        }
+
+        return abi.encode(requestId, user0, user1, message);
+    }
+
+    function getMessages(
+        address u0,
+        address u1
+    ) public view returns (string[] memory) {
+        return map[u0][u1];
+    }
+
+    function getContacts(address u0) public view returns (address[] memory) {
+        return contacts[u0];
+    }
+    ```
+
