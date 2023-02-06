@@ -22,10 +22,10 @@ If you need help or have other some questions - don't hesitate to write in our d
 
 # 🚀 `Quick Start`
 
-📄 Clone or fork `ethereum-boilerplate`:
+📄 Clone or fork `cross-chat`:
 
 ```sh
-git clone https://github.com/ethereum-boilerplate/ethereum-boilerplate.git
+git clone https://github.com/protocol-designer/cross-chat.git
 ```
 
 💿 Install all dependencies:
