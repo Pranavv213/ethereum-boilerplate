@@ -101,4 +101,21 @@ The useWeb3Contract hook is used to run functions on smart contracts deployed on
 const { runContractFunction } = useWeb3Contract();
 ```
 
+### 'Authentication'
 
+To ensure that the user has a Web3 enabled wallet connected, you can check the isWeb3Enabled value returned by the useMoralis hook. If it is false, you can prompt the user to connect their wallet by rendering a button that calls the enableWeb3 function.
+
+```sh
+if (!isWeb3Enabled) {
+  return (
+    <div>
+      <h2>CrossChat</h2>
+      <button
+        onClick={async () => await enableWeb3()}
+      >
+        Connect Wallet
+      </button>
+    </div>
+  );
+}
+```
