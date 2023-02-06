@@ -191,3 +191,5 @@ user1: The address of the receiver's wallet.
 message: The text message to be sent through the channel.
 Once the runContractFunction function is called, the text message will be sent through the channel between the two wallets.
 
+
+
