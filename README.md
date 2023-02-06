@@ -44,19 +44,15 @@ npm start
 - [🚀 Quick Start](#-quick-start)
 - [🧭 Table of contents](#-table-of-contents)
 - [🏗 Frontend](#-React JS, Moralis)
-  - [`Provider`]
-  - [`Basic imports & setup`]
-  - [`Authentication`]
-  - [`handleCreate`]
-  - [`addMessage`]
-  - [`getContact`]
-  - [`getMessages`]
+  - [`Provider`](#-Provider)
+  - [`Basic imports & setup`](#-Basic-imports-&-setup)
+  - [`Authentication`](#-Authentication)
+  - [`handleCreate`](#-handleCreate)
+  - [`addMessage`](#-addMessage)
+  - [`getContact`](#-getContact)
+  - [`getMessages`](#-getMessages)
 - [🏗 Backend](#-Solidity, Router Cross-Talk Library)
-  - [`<NFTBalances />`]
-  - [`<ERC20Balances />`]
-  - [`<ERC20Transfers />`]
-  - [`<NFTTransfers />`]
-  - [`<Transactions />`]
+  -
 # 🏗 Frontend
 
 ### `Provider`
