@@ -191,7 +191,7 @@ user1: The address of the receiver's wallet.
 message: The text message to be sent through the channel.
 Once the runContractFunction function is called, the text message will be sent through the channel between the two wallets.
 
-### `getContacts'
+### `getContacts`
 
 The getContacts function is used to retrieve the contacts with whom a channel has been created. It calls the getContacts function defined in the deployed smart contract.The getContacts takes in just one parameter ,u0 which is the sender's wallet address.
 ```sh
