@@ -159,4 +159,35 @@ user1: The address of the receiver's wallet.
 message: A NULL message to create the channel.
 Once the runContractFunction function is called, a channel will be created between the two wallets.
 
+### `addMessage`
+
+To send a message through a previously created channel between two wallets, the addMessage function can be used. The function is similar to the handleCreate function that was used to create the channel, but with a text message passed to the pingDestination function instead of a NULL message.
+
+```sh
+const addMessage = async () => {
+  const options = {
+    abi: abi,
+    contractAddress: contractAddress,
+    functionName: "pingDestination",
+    params: {
+      chainId: "80001",
+      destinationContractAddress: destContractAdd,
+      user0: account,
+      user1: receiptAddress,
+      message: msg,
+    },
+  };
+  const result = await runContractFunction({ params: options });
+  console.log(result, account);
+};
+```
+The abi and contractAddress variables are the same as in the handleCreate function, and they should contain the ABI and address of the source contract deployed.
+The pingDestination function is called with the following parameters:
+
+chainId: The ID of the destination chain.
+destinationContractAddress: The address of the destination contract.
+user0: The address of the sender's wallet.
+user1: The address of the receiver's wallet.
+message: The text message to be sent through the channel.
+Once the runContractFunction function is called, the text message will be sent through the channel between the two wallets.
 
