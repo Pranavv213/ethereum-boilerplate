@@ -49,8 +49,8 @@ npm start
   - [`Authentication`](#Authentication)
   - [`handleCreate`](#handleCreate)
   - [`addMessage`](#addMessage)
-  - [`getContacts`](#getContact)
-  - [`getMessages`](#getMessages)
+  - [`getContacts`](#getContacts)
+  - [`getMessage`](#getMessage)
 - [🏗 Backend](#Solidity, Router Cross-Talk Library)
   -
 # 🏗 Frontend
