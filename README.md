@@ -372,7 +372,7 @@ _pingDestination function calls the requestToDest function on the Router's Gatew
             Utils.ContractCalls(payloads, addresses)
         );
     }
-    ```
+```
 ### `Handling a crosschain request`
 
 To handle cross-chain requests on the destination chain we make use of handleRequestFromSource function. This function is automatically called when the destination chain receives the requests, and the user does not need to manually call it. The core logic of the dapp is written in this function to store the message and contacts in two mappings, map and contacts, respectively.
@@ -448,5 +448,5 @@ The function returns the contacts stored in the contacts mapping for the given w
     function getContacts(address u0) public view returns (address[] memory) {
         return contacts[u0];
     }
-    ```
+ ```
 
