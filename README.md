@@ -40,4 +40,14 @@ npm install
 ```sh
 npm start
 ```
+# 🧭 `Table of contents`
+- [`ethereum-boilerplate`](#ethereum-boilerplate)
+- [🚀 Quick Start](#-quick-start)
+- [🧭 Table of contents](#-table-of-contents)
+- [🏗 Ethereum Components](#-ethereum-components)
+  - [`<NFTBalances />`](#nftbalances-)
+  - [`<ERC20Balances />`](#erc20balances-)
+  - [`<ERC20Transfers />`](#erc20transfers-)
+  - [`<NFTTransfers />`](#nfttransfers-)
+  - [`<Transactions />`](#transactions-)
 
