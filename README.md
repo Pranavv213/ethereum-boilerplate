@@ -452,9 +452,31 @@ The function returns the contacts stored in the contacts mapping for the given w
  
  ### `Deployments`
  
-To implement cross-chain communication, we need to deploy the same contract on all chains that we want to have communication with. The first step is to open Remix.Ethereum and compile the code. After that, we need to deploy the contract on the desired chains and pass in the Gateway address, destination gas limit, and source gas limit as parameters. The Gateway address can be found on the Router Protocol's Supported Chains documentation page at "https://devnet-docs.routerprotocol.com/networks/supported-chains".
+To implement cross-chain communication, we need to deploy the same contract on all chains that we want to have communication with. The first step is to open Remix.Ethereum and compile the code. After that, we need to deploy the contract on the desired chains and pass in the Gateway address, destination gas limit, and source gas limit as parameters. The Gateway address can be found on the Router Protocol's Supported Chains documentation page at https://devnet-docs.routerprotocol.com/networks/supported-chains.
 
 To determine the gas limits, we can use a gas estimator. One option is to use the hardhat-gas-reporter plugin. Alternatively, we can view recent transactions on the desired chain through its explorer to determine the gas limit.
+
+### `Back to Frontend`
+
+To allow for cross-chain communication, the contract must be deployed on multiple chains. After deployment, copy the ABI of the contract, the addresses of the deployed contracts, and the chain IDs. Pass this information to the runContractFunction function as follows:
+
+``sh
+const options = {
+    abi: <insert ABI here>,
+    contractAddress: <insert source contract address here>,
+    functionName: "pingDestination",
+    params: {
+      chainId: <insert destination chain ID here>,
+      destinationContractAddress: <insert destination contract address here>,
+      user0: account,
+      user1: channelReceiptAddress,
+      message: "#NULL#",
+    },
+};
+
+const result = await runContractFunction({ params: options });
+
+```
  
  
 
