@@ -318,9 +318,8 @@ user0 (address): the wallet address of the sender,
 user1 (address): the wallet address of the receiver,
 message (string memory): the message to be sent.
 Functionality
-The pingDestination function performs the following operations:
 
-Increments the currentRequestId,
+The _pingDestination function Increments the currentRequestId,
 Encodes the currentRequestId, user0, user1, and message into a payload to be sent to the destination chain,
 Sets the expiryTimestamp to be the current block timestamp plus 100000000000,
 Converts the destinationContractAddress into an array of bytes called addresses,
