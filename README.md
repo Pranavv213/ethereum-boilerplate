@@ -96,7 +96,7 @@ const {
   chainId: chainIdHex,
 } = useMoralis();
 ```
-The useWeb3Contract hook is used to run functions on smart contracts deployed on the Ethereum blockchain.
+The useWeb3Contract hook is used to run functions on smart contracts deployed on the blockchain.
 ```sh
 const { runContractFunction } = useWeb3Contract();
 ```
