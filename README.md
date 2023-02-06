@@ -49,7 +49,7 @@ npm start
   - [`Authentication`](#Authentication)
   - [`handleCreate`](#handleCreate)
   - [`addMessage`](#addMessage)
-  - [`getContact`](#getContact)
+  - [`getContacts`](#getContact)
   - [`getMessages`](#getMessages)
 - [🏗 Backend](#Solidity, Router Cross-Talk Library)
   -
@@ -75,7 +75,7 @@ root.render(
 );
 ```
 
-### `Basic imports & basic setup`
+### `Basic imports & setup`
 
 In order to interact with the blockchain using Moralis, you need to import the useMoralis and useWeb3Contract hooks from the react-moralis library
 
