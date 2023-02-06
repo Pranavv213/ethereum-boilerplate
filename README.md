@@ -119,3 +119,6 @@ if (!isWeb3Enabled) {
   );
 }
 ```
+When the user clicks the "Connect Wallet" button, the enableWeb3 function will be called, which will prompt the user to connect their Web3 enabled wallet (e.g. MetaMask).
+
+Once the user has connected their wallet, the isWeb3Enabled value will change to true, allowing you to proceed with interacting with the Ethereum blockchain through Moralis.
