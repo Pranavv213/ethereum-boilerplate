@@ -57,4 +57,25 @@ npm start
   - [`<ERC20Transfers />`]
   - [`<NFTTransfers />`]
   - [`<Transactions />`]
+# 🏗 Frontend
 
+### `Provider`
+
+Integrating Moralis into a React project
+This project uses the Moralis library for interacting with the Ethereum blockchain. Moralis is a provider for the Web3.js library, which allows for communication with Ethereum nodes.
+
+In the Index.js file, the React app has been wrapped with the MoralisProvider component provided by the Moralis library. This sets up the Moralis instance and makes it available to the rest of the app through the React context API.
+
+For more information on Moralis, visit their official website at https://moralis.io/.
+
+As an alternative, one could use the Ether.js or Web3.js libraries for similar functionality. The choice of Moralis in this project was made due to its ease of use and comprehensive documentation.
+
+```sh
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <MoralisProvider 
+  >
+    <App />
+  </MoralisProvider>
+);
+```
