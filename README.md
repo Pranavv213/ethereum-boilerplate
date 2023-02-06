@@ -57,7 +57,7 @@ npm start
   - [`Creating a channel/ Sending a message to an address on destination chain`](#Creating-a-channel/Sending-a-message-to-an-address-on-destination-chain)
   - [`Handling a crosschain request`](#Handling-a-crosschain-request)
   - [`Deployments`](#Deployments)
-  - ['Back to Frontend`](#Back-to-Frontend)
+  - [`Back to Frontend`](#Back-to-Frontend)
   
 # 🏗 Frontend
 
