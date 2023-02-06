@@ -86,4 +86,19 @@ In order to interact with the Ethereum blockchain using Moralis, you need to imp
 ```sh
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 ```
+Next, you can use the useMoralis hook to get information about the current status of Web3 and the user's Ethereum account and chain ID.
+
+```sh
+const {
+  isWeb3Enabled,
+  enableWeb3,
+  account,
+  chainId: chainIdHex,
+} = useMoralis();
+```
+The useWeb3Contract hook is used to run functions on smart contracts deployed on the Ethereum blockchain.
+```sh
+const { runContractFunction } = useWeb3Contract();
+```
+
 
