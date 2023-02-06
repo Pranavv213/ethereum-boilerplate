@@ -81,12 +81,12 @@ root.render(
 
 ### `Basic imports & basic setup`
 
-In order to interact with the Ethereum blockchain using Moralis, you need to import the useMoralis and useWeb3Contract hooks from the react-moralis library
+In order to interact with the blockchain using Moralis, you need to import the useMoralis and useWeb3Contract hooks from the react-moralis library
 
 ```sh
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 ```
-Next, you can use the useMoralis hook to get information about the current status of Web3 and the user's Ethereum account and chain ID.
+Next, you can use the useMoralis hook to get information about the the user's account and chain ID.
 
 ```sh
 const {
