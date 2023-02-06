@@ -55,7 +55,7 @@ npm start
   - [`Initiating the Contract`](#Initiating-the-Contract)
   - [`Creating state variables and the constructor`](#Creating-state-variables-and-the-constructor)
   - [`Creating a channel/ Sending a message to an address on destination chain`](#Creating-a-channel/Sending-a-message-to-an-address-on-destination-chain)
-  - [`Handling a cross-chain request`](#Handling a cross-chain request)
+  - [`Handling a crosschain request`](#Handling-a-crosschain-request)
   - [`Deployments`](#Deployments)
   - ['Back to Frontend`](#Back-to-Frontend)
   -
