@@ -14,11 +14,11 @@ Please check the [official documentation of Router Protocol](https://www.routerp
 
 # ⭐️ `Star us`
 
-If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes us very happy!
+If this repository helps you build cross-chain dapps faster and easier - please star this project, every star makes us very happy!
 
 # 🤝 `Need help?`
 
-If you need help with setting up the boilerplate or have other questions - don't hesitate to write in our community forum and we will check asap. [Forum link](https://forum.moralis.io/t/ethereum-boilerplate-questions/3951/86). The best thing about this boilerplate is the super active community ready to help at any time! We help each other.
+If you need help or have other some questions - don't hesitate to write in our discord channel and we will check asap. [Discord link](https://discord.gg/xvx2pFu9). The best thing about this is the super active community ready to help at any time! We help each other.
 
 # 🚀 `Quick Start`
 
