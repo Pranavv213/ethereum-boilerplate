@@ -45,7 +45,7 @@ npm start
 - [🧭 Table of contents](#-table-of-contents)
 - [🏗 Frontend](#-React JS, Moralis)
   - [`Provider`]
-  - [`Basic imports & basic setup`]
+  - [`Basic imports & setup`]
   - [`Authentication`]
   - [`handleCreate`]
   - [`addMessage`]
@@ -78,3 +78,12 @@ root.render(
   </MoralisProvider>
 );
 ```
+
+### `Basic imports & basic setup`
+
+In order to interact with the Ethereum blockchain using Moralis, you need to import the useMoralis and useWeb3Contract hooks from the react-moralis library
+
+```sh
+import { useMoralis, useWeb3Contract } from 'react-moralis';
+```
+
