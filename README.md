@@ -460,7 +460,7 @@ To determine the gas limits, we can use a gas estimator. One option is to use th
 
 To allow for cross-chain communication, the contract must be deployed on multiple chains. After deployment, copy the ABI of the contract, the addresses of the deployed contracts, and the chain IDs. Pass this information to the runContractFunction function as follows:
 
-``sh
+```sh
 const options = {
     abi: <insert ABI here>,
     contractAddress: <insert source contract address here>,
