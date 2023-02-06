@@ -1,10 +1,10 @@
-# `ethereum-boilerplate`
+# `Cross-Chat`
 
-> Fully Typescript ready NextJS components for fast building dApps without running own backend
+> Fully ready ReactJS Dapp for Cross-Chain Messaging using Router Cross-Talk
 
-🚀DEMO: https://eth-boilerplate.vercel.app/
+🚀DEMO: https://cross-chat-47b25.web.app/
 
-This boilerplate is built with [Moralis](https://moralis.io?utm_source=github&utm_medium=readme&utm_campaign=ethereum-boilerplate)
+This project is built with [Router](https://https://www.routerprotocol.com/)
 
 You need active web3 provider/wallet only for authnetication. All pages in this boilerplate do not require an active web3 provider, they use Moralis Web3 API. Moralis supports the most popular blockchains and their test networks. You can find a list of all available networks in [Moralis Supported Chains](https://docs.moralis.io/reference/supported-chains-nft)
 
