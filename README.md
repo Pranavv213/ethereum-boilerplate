@@ -52,6 +52,12 @@ npm start
   - [`getContacts`](#getContacts)
   - [`getMessage`](#getMessage)
 - [🏗 Backend](#Solidity, Router Cross-Talk Library)
+  - [`Initiating the Contract`](#Initiating-the-Contract)
+  - [`Creating state variables and the constructor`](#Creating-state-variables-and-the-constructor)
+  - [`Creating a channel/ Sending a message to an address on destination chain`](#Creating-a-channel/Sending-a-message-to-an-address-on-destination-chain)
+  - [`Handling a cross-chain request`](#Handling a cross-chain request)
+  - [`Deployments`](#Deployments)
+  - ['Back to Frontend`](#Back-to-Frontend)
   -
 # 🏗 Frontend
 
@@ -233,6 +239,10 @@ const getMessages = async () => {
     setMessage(something);
   };
   ```
+  
+  #Backend
+  
+  ###
 
 
 
