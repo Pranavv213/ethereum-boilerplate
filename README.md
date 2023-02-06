@@ -41,13 +41,20 @@ npm install
 npm start
 ```
 # 🧭 `Table of contents`
-- [`ethereum-boilerplate`](#ethereum-boilerplate)
 - [🚀 Quick Start](#-quick-start)
 - [🧭 Table of contents](#-table-of-contents)
-- [🏗 Ethereum Components](#-ethereum-components)
-  - [`<NFTBalances />`](#nftbalances-)
-  - [`<ERC20Balances />`](#erc20balances-)
-  - [`<ERC20Transfers />`](#erc20transfers-)
-  - [`<NFTTransfers />`](#nfttransfers-)
-  - [`<Transactions />`](#transactions-)
+- [🏗 Frontend](#-React JS, Moralis)
+  - [`Provider`]
+  - [`Basic imports & basic setup`]
+  - [`Authentication`]
+  - [`handleCreate`]
+  - [`addMessage`]
+  - [`getContact`]
+  - [`getMessages`]
+- [🏗 Backend](#-Solidity, Router Cross-Talk Library)
+  - [`<NFTBalances />`]
+  - [`<ERC20Balances />`]
+  - [`<ERC20Transfers />`]
+  - [`<NFTTransfers />`]
+  - [`<Transactions />`]
 
