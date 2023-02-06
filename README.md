@@ -304,3 +304,32 @@ constructor(
 }
 ```
 
+### `Creating a channel/ Sending a message to an address on destination chain`
+
+pingDestination Function:-
+The pingDestination function is used to create a channel and send a message to a specified address on a destination chain. It is a public function that is payable.
+
+Parameters
+The function takes in the following parameters:
+
+chainId (string memory): the id of the destination chain.
+destinationContractAddress (address): the address of the destination contract to which the message will be sent.
+user0 (address): the wallet address of the sender.
+user1 (address): the wallet address of the receiver.
+message (string memory): the message to be sent.
+Functionality
+The pingDestination function performs the following operations:
+
+Increments the currentRequestId.
+Encodes the currentRequestId, user0, user1, and message into a payload to be sent to the destination chain.
+Sets the expiryTimestamp to be the current block timestamp plus 100000000000.
+Converts the destinationContractAddress into an array of bytes called addresses.
+Assigns the payload to an array of bytes called payloads.
+Calls the _pingDestination function and passes the following parameters:
+expiryTimestamp
+80000000000 as source and destination chain gas limit
+chainId
+payloads
+addresses
+
+
