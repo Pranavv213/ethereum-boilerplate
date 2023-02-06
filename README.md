@@ -43,15 +43,15 @@ npm start
 # 🧭 `Table of contents`
 - [🚀 Quick Start](#-quick-start)
 - [🧭 Table of contents](#-table-of-contents)
-- [🏗 Frontend](#-React JS, Moralis)
-  - [`Provider`](#-Provider)
-  - [`Basic imports & setup`](#-Basic-imports-&-setup)
-  - [`Authentication`](#-Authentication)
-  - [`handleCreate`](#-handleCreate)
-  - [`addMessage`](#-addMessage)
-  - [`getContact`](#-getContact)
-  - [`getMessages`](#-getMessages)
-- [🏗 Backend](#-Solidity, Router Cross-Talk Library)
+- [🏗 Frontend](#React JS, Moralis)
+  - [`Provider`](#Provider)
+  - [`Basic imports & setup`](#Basic-imports-&-setup)
+  - [`Authentication`](#Authentication)
+  - [`handleCreate`](#handleCreate)
+  - [`addMessage`](#addMessage)
+  - [`getContact`](#getContact)
+  - [`getMessages`](#getMessages)
+- [🏗 Backend](#Solidity, Router Cross-Talk Library)
   -
 # 🏗 Frontend
 
