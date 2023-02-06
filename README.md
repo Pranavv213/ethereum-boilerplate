@@ -123,7 +123,7 @@ When the user clicks the "Connect Wallet" button, the enableWeb3 function will b
 
 Once the user has connected their wallet, the isWeb3Enabled value will change to true, allowing you to proceed with interacting with the Ethereum blockchain through Moralis.
 
-### `handleCreate'
+### `handleCreate`
 
 In order to create a channel between two wallets , a NULL message must be sent from one wallet to the other. This can be achieved by calling pingDestination function of the Cross-Talk Library using the runContractFunction function provided by the useWeb3Contract hook.
 
