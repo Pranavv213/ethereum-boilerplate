@@ -61,7 +61,6 @@ npm start
 
 ### `Provider`
 
-Integrating Moralis into a React project
 This project uses the Moralis library for interacting with the Ethereum blockchain. Moralis is a provider for the Web3.js library, which allows for communication with Ethereum nodes.
 
 In the Index.js file, the React app has been wrapped with the MoralisProvider component provided by the Moralis library. This sets up the Moralis instance and makes it available to the rest of the app through the React context API.
