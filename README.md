@@ -122,3 +122,41 @@ if (!isWeb3Enabled) {
 When the user clicks the "Connect Wallet" button, the enableWeb3 function will be called, which will prompt the user to connect their Web3 enabled wallet (e.g. MetaMask).
 
 Once the user has connected their wallet, the isWeb3Enabled value will change to true, allowing you to proceed with interacting with the Ethereum blockchain through Moralis.
+
+### `handleCreate'
+
+In order to create a channel between two wallets , a NULL message must be sent from one wallet to the other. This can be achieved by calling pingDestination function of the Cross-Talk Library using the runContractFunction function provided by the useWeb3Contract hook.
+
+The following code shows an example of how to use the runContractFunction function to create a channel between two wallets.
+
+```sh
+const handleCreate = async () => {
+  const options = {
+    abi: abi,
+    contractAddress: contractAddress,
+    functionName: "pingDestination",
+    params: {
+      chainId: "80001",
+      destinationContractAddress: destContractAdd,
+      user0: account,
+      user1: channelReceiptAddress,
+      message: "#NULL#",
+    },
+  };
+
+  const result = await runContractFunction({ params: options });
+  console.log(result, account);
+};
+```
+The abi variable should contain the ABI (Application Binary Interface) of the source contract that is deployed on the Ethereum blockchain. The contractAddress variable should contain the address of the deployed source contract.
+
+The pingDestination function is called with the following parameters:
+
+chainId: The ID of the destination chain.
+destinationContractAddress: The address of the destination contract.
+user0: The address of the sender's wallet.
+user1: The address of the receiver's wallet.
+message: A NULL message to create the channel.
+Once the runContractFunction function is called, a channel will be created between the two wallets.
+
+
